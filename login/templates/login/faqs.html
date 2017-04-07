@@ -1,0 +1,419 @@
+<html>
+{% load static %}
+<head>
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Lato|Roboto|Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'login/animate.css'%}">
+  <script type="text/javascript" src="{% static 'login/js/wowmin.js'%}"></script>
+
+  
+  <script>
+      new WOW().init();
+  </script>
+<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+body {
+  font-family: 'Open Sans';
+  font-size: 1.5em;
+  background: #eee;
+  display: block;
+  background: url("{% static 'login/images/backg.jpg'%}");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  padding: 0 60px 0 0;
+}
+
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
+}
+
+.question {
+  position: relative;
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+.answers {
+  background: white;
+  color: black;
+  padding: 0px 15px;
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class='centerplease' style="color: white; font-family: 'lato'; font-weight: bolder; text-align: center;">
+  FAQ ACCORDION
+</div>
+<br>
+
+<div class='centerplease' style="color: white; text-align: center;">
+  FOOD
+</div>
+<br>
+
+
+<div class="content">
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0s">
+  <input type="checkbox" id="question1" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question1" class="question">
+    Is breakfast and dinner included in your food package?
+  </label>
+  <div class="answers">
+    YES!! You will be served breakfast, lunch and dinner
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.2s">
+  <input type="checkbox" id="question2" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question2" class="question">
+    But from where will you be serving me?
+  </label>
+  <div class="answers">
+    We have joined hands with some of the best food outlets in India like Haldirams, you could walk into any one of their numerous outlets with the food coupons we provide and brace up to witness the Great Indian Hospitality.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.4s">
+  <input type="checkbox" id="question3" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question3" class="question">
+    What will you be serving me?
+  </label>
+  <div class="answers">
+   India is known for its rich and exotic cuisine. Where is the fun in a backpacking trip without enjoying authentic Indian food in all its royalty? So yes, we will be serving you THE INDIAN FOOD. 
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.6s">
+  <input type="checkbox" id="question4" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question4" class="question">
+    What if I don&#39;t want Indian food?
+  </label>
+  <div class="answers">
+    Options like McDonalds will be provided as per your choice. But try to taste Indian food. There lies the fun.  
+  </div>
+</div>
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.8s">
+  <input type="checkbox" id="question5" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question5" class="question">
+    What if I don&#39;t want your food service?
+  </label>
+  <div class="answers">
+    Just return the coupons and you will be refunded. We stand by what we promised- Absolute freedom and flexibility.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "1s">
+  <input type="checkbox" id="question6" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question6" class="question">
+    Food timings?
+  </label>
+  <div class="answers">
+    FLEXIBLE!!! Whenever you want.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "1.2s">
+  <input type="checkbox" id="question7" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question7" class="question">
+    Is alcohol included in your package?
+  </label>
+  <div class="answers">
+    No. We leave it to you – Alcohol Hunting would be fun and easy!!
+  </div>
+</div>
+  
+</div>
+  
+
+<div class='centerplease' style="color: white; text-align: center;">
+  TRANSPORT
+</div>
+<br>
+
+<div class="content" >
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0s">
+  <input type="checkbox" id="question9" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question9" class="question">
+    I finally landed up in the airport. Are you there?
+  </label>
+  <div class="answers">
+    Yes, of course. Welcome to India.
+  </div>
+</div>
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.2s">
+  <input type="checkbox" id="question10" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question10" class="question">
+    I am coming to Delhi. How will I go from one place to another?
+  </label>
+  <div class="answers">
+    Delhi Metro welcomes you whole heartedly. We will be giving you tourist metro cards with which you could travel anywhere and everywhere in Delhi
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.4s">
+  <input type="checkbox" id="question11" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question11" class="question">
+   But metro trains won&#39;t be dropping me at the exact spot (exact latitude and longitude) I want. So what next?
+  </label>
+  <div class="answers">
+    Uber, Ola and the ubiquitous Indian auto rickshaws are available in all metro cities. Use it as per your convenience.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.6s">
+  <input type="checkbox" id="question12" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question12" class="question">
+    I am going from one city to another. How would you help me?  </label>
+  <div class="answers">
+   We will be booking AC Volvo buses for you. Train services will also be provided on request.
+  </div>
+</div>
+</div>
+
+
+<div class='centerplease' style="color: white; text-align: center;">
+  STAY
+</div>
+<br>
+
+<div class="content" >
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0s">
+  <input type="checkbox" id="question13" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question13" class="question">
+   Where do I stay? Hotel rooms?
+  </label>
+  <div class="answers">
+    NO.  Fun filled, culturally diverse and energetic Backpacker&#39;s Hostel awaits you.
+  </div>
+</div>
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.2s">
+  <input type="checkbox" id="question14" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question14" class="question">
+    How will I reach those hostels?
+  </label>
+  <div class="answers">
+    Uber or Ola according to the city will be arranged by us. Just hop on, meet you at the hostel. 
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.4s">
+  <input type="checkbox" id="question15" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question15" class="question">
+   I reached a new city. I decided to see the places around for some time before going to the hostels with you. Will you pick me up from anywhere at any time?
+  </label>
+  <div class="answers">
+    Yes. We will be at your service through Uber and Ola.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.6s">
+  <input type="checkbox" id="question16" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question16" class="question">
+    I Is cleanliness and safety assured? </label>
+  <div class="answers">
+   100%. 
+  </div>
+</div>
+</div>
+
+<div class='centerplease' style="color: white; text-align: center;">
+  SECURITY AND FREEDOM
+</div>
+<br>
+
+<div class="content" >
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0s">
+  <input type="checkbox" id="question17" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question17" class="question">
+   Will there always be a guide behind me blabbering about unnecessary things?
+  </label>
+  <div class="answers">
+   No, you are on your own.
+  </div>
+</div>
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.2s">
+  <input type="checkbox" id="question18" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question1" class="question">
+   How will I know the route and best places to visit?
+  </label>
+  <div class="answers">
+    Google it dude!! You are a solo traveler with an ultra-cool mentality.
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.4s">
+  <input type="checkbox" id="question19" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question19" class="question">
+   What about language troubles that I will be facing in every nook and corner in India? How will I manage without a guide?
+  </label>
+  <div class="answers">
+    With the advent of Internet, every Indians know bits and pieces enough to talk to you. And where is the fun in a backpacker&#39;s trip without learning a new language and moments of sheer laughter when you make a mistake in the same. 
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.6s">
+  <input type="checkbox" id="question20" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question20" class="question">
+    Is the trip plans flexible?  </label>
+  <div class="answers">
+   Definitely. Your wish is our command!!
+  </div>
+</div>
+</div>
+
+<div class='centerplease' style="color: white; text-align: center;">
+  PAYMENT
+</div>
+<br>
+
+<div class="content" >
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0s">
+  <input type="checkbox" id="question21" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question21" class="question">
+   So how will I pay you?
+  </label>
+  <div class="answers">
+  PayPal. Transaction charge of 4.4% will have to be paid by you.
+  </div>
+</div>
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.2s">
+  <input type="checkbox" id="question22" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question22" class="question">
+   Will I be refunded in case I cancel my plan?
+  </label>
+  <div class="answers">
+    Yes. You will be refunded 90% of the amount if you cancel it before 11 to 100 days prior to the tip and 50% before 0 to 10 days. After all you have suddenly decided to be less adventurous. Some price need to be paid for that, isn&#39;t it?
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.4s">
+  <input type="checkbox" id="question23" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question23" class="question">
+   Is flight ticket included in what I pay?
+  </label>
+  <div class="answers">
+   No. we hope to make profits somewhere in near future
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.6s">
+  <input type="checkbox" id="question24" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question24" class="question">
+    Hmm, so are there any hidden charges in your urge to make profits? </label>
+  <div class="answers">
+   NO. We are not planning to make profits at the cost of your trust. 
+  </div>
+</div>
+
+<div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "0.8s">
+  <input type="checkbox" id="question25" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question25" class="question">
+    What all will I get in 33$?</label>
+  <div class="answers">
+   Food ( 3 times a day), Hostel stay, transport and limitless freedom to fly like a bird.  
+  </div>
+</div>
+ <div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "1s">
+  <input type="checkbox" id="question26" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question26" class="question">
+   Finally I just want to know, how are you guys going to give me so much in just 33$? Really??</label>
+  <div class="answers">
+  India is a place where you could easily live with 33$ either like a king or like a beggar.       We are here to just direct you towards that royal pathway.  
+  </div>
+</div><div class="wow fadeInDown" data-wow-duration = "0.2s" data-wow-delay = "1.2s">
+  <input type="checkbox" id="question27" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question27" class="question">
+   Ok deal. Good concept. But still I am not ready to give you my 33$. You have one last chance to convince me, your time starts now&hellip;</label>
+  <div class="answers">
+   We are a bunch of students from BITS Pilani. Google BITS and see for yourself how good we are. Your time starts now&hellip;
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+  <head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("{%static 'login/images/bg.jpg'%}");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("{%static 'login/images/explore.jpg'%}");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("{%static 'login/images/culture.jpg'%}");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border" style="font-size: 20 px; font-family: 'roboto' ">Why TripOgenic?</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center; font-family: 'roboto condensed';"></h3>
+  <p>TripOgenic is a community of smart backpackers helping you to combat the fear of travelling alone and to brush away the troubles of choosing the right and the bests in India. We ensure that your time in India is spent exploring the country and not on making all the arrangements.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:50px;color: #f7f7f7;">EXPLORE</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center; font-family: 'roboto condensed'; padding:40px 80px;text-align: justify;">
+    <p>We have a fixed and transparent booking system. Irrespective of the number of days or the places you want to visit, it is USD 33. Be it Trump or Tyrion! There are absolutely no extra costs to be paid after booking the package. This package takes care of your accommodation, food, transport, safety, connectivity while ensuring you have complete control and freedom while planning your trip.
+    </p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:40px;color: #f7f7f7;">THE CULTURE</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center; font-family: 'roboto condensed'; padding:50px 80px;text-align: justify;">
+    <p>Every booking you do withTripOgenic helps our backpacker community grow. Its entirely upto you whether you want your money to help a rich businessman build a second home or help this community of backpackers. Make a smart choice! Book Now.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">BOOK NOW!</span>
+  </div>
+</div>
+
+</body>
+</html>

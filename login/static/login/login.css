@@ -1,0 +1,107 @@
+@font-face {
+    font-family: SUIL;
+    src: url(http://www.snaek.clanteam.com/segoeuil.ttf);
+    font-weight:400;
+}
+body {
+	background: #EEE;
+	font-family: SUIL;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#tabs ul {
+	list-style-type: none;
+	width: 360px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#tabs ul li {
+	display: inline;
+}
+
+#tabs ul li {
+	float: left;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #5A7710;
+	color: #FFF;
+	-webkit-transition: background 0.3s;
+}
+
+#tabs ul li#loginbutton {
+	background: #7BA31C;
+}
+
+#tabs ul li:hover {
+	cursor: pointer;
+}
+
+#wrapper {
+	margin: 0px auto;
+	width: 360px;
+	
+	outline: none;
+	background: #7BA31C;
+	box-shadow: 0px 0px 10px #6D6D6D;
+	margin-top: -13.5px;
+}
+#login-wrapper{
+	height: 290px;
+}
+#reg-wrapper, #rp-wrapper {
+	display: none;
+	height: 320px;
+}
+
+#login-text, #login-pass {
+	outline: none;
+	width: 296px;
+	padding: 10px;
+	font-family: SUIL;
+	color: #7BA31C;
+	margin-left: 20px;
+}
+
+#login-text {
+	margin-top: 15px;
+}
+
+#login-pass {
+	margin-top: 10px;
+}
+
+#info {
+	width: 360px;
+	margin-left: 20px;
+	margin-top: -15px;
+	color: #FFF;
+	font-size: 13px;
+}
+
+#login-button {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: #2180b7;
+	color: #FFF;
+	border-radius: 5px;
+	font-family: SUIL;
+	margin: 20px;
+	-webkit-transition: background 0.3s;
+}
+
+#login-button:hover {
+	cursor: pointer;
+	background: #1E75AA;
+}
+
+#login-button:active {
+	background: #2180b7;
+}
