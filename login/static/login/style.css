@@ -139,7 +139,7 @@ button::before, button::after {
     }
 
    .news{
-   	background: url('images/fortl.jpg');
+   	background: url('images/how it works.jpg');
    	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ button::before, button::after {
      opacity: 0.8;
    }
    .fort{
-   	background: url('images/how it works.jpg');
+   	background: url('images/fort1.jpg');
    	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
